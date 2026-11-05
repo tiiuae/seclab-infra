@@ -4,6 +4,7 @@
   inputs,
   modulesPath,
   lib,
+  self,
   ...
 }:
 {
@@ -18,6 +19,7 @@
     nebula
     openssh
     user-fayad
+    user-jrautiola
   ]);
 
   # this server has been initialized with 26.11 with nixos-anywhere

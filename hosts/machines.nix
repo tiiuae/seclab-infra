@@ -16,6 +16,17 @@
       publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOYdOsd6swR+x0AHmcm4ixi+KP/jGax9h/v29C5X0h3b";
     };
   };
+  uae-seclab-nethsm-gateway = {
+    module = ./uae/seclab/nethsm-gateway/configuration.nix;
+    system = "x86_64-linux";
+    machine = {
+      ip = "10.161.5.238";
+      internal_ip = "10.161.5.238";
+      nebula_ip = "10.43.43.13";
+      publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILTaE7O/g8BQZjLYBXn1Jkxm4YtF8wpoX9dRAqsODzRM";
+    };
+  };
+
 }
 
 # Reserved Nebula IPs for externally managed hosts:

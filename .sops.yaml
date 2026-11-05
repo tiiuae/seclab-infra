@@ -25,6 +25,7 @@ creation_rules:
     key_groups:
     - age:
       - *fayad
+      - *jrautiola
       - *uae-seclab-lighthouse
       - *uae-lab-builder1
       - *uae-seclab-nethsm-gateway

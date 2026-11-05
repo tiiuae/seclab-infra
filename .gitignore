@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2022-2025 TII (SSRC) and the Ghaf contributors
+# SPDX-License-Identifier: Apache-2.0
+
+result
+result-*
+.idea
+.direnv
+*.tmp
+.env
+.pre-commit-config.yaml
+/*.qcow2
+ca.key
+**/__pycache__/*
+.codex
+/.flakevuln/
+source-vsa.sigstore.json

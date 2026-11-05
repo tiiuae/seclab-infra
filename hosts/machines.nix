@@ -22,7 +22,7 @@
     machine = {
       ip = "10.161.5.238";
       internal_ip = "10.161.5.238";
-      nebula_ip = "10.43.43.13";
+      nebula_ip = "10.43.43.16";
       publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILTaE7O/g8BQZjLYBXn1Jkxm4YtF8wpoX9dRAqsODzRM";
     };
   };

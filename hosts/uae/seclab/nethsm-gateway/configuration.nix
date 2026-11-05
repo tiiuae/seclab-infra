@@ -41,5 +41,8 @@
   system.stateVersion = lib.mkForce "26.11";
 
   nebula.enable = lib.mkDefault true;
+  
+  services.nebula.networks.seclab.listen.port = lib.mkForce 0;
+  services.nebula.networks.seclab.relays = [ "10.43.43.1" ];
 
 }

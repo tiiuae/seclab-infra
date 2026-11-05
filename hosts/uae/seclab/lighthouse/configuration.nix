@@ -33,4 +33,6 @@
     enable = true;
     isLighthouse = true;
   };
+
+  services.nebula.networks.seclab.isRelay = true;
 }

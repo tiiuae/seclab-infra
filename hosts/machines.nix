@@ -30,3 +30,5 @@
 }
 
 # Reserved Nebula IPs for externally managed hosts:
+# nebula_ip = 10.43.43.14 | robotci (managed in ghaf-robots-infra)
+# nebula_ip = 10.43.43.15 | carbon (managed in jrautiola's nix-infra)

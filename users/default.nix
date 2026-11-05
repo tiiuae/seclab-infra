@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2022-2025 TII (SSRC) and the Ghaf contributors
+# SPDX-License-Identifier: Apache-2.0
+{
+  flake.nixosModules = {
+    user-hrosten = import ./hrosten.nix;
+    user-jrautiola = import ./jrautiola.nix;
+    user-cazfi = import ./cazfi.nix;
+    user-ktu = import ./ktu.nix;
+    user-avnik = import ./avnik.nix;
+    user-mariia = import ./mariia.nix;
+    user-leivos = import ./leivos.nix;
+    user-bmg = import ./bmg.nix;
+    user-fayad = import ./fayad.nix;
+    user-github = import ./github.nix;
+    user-remote-build = import ./remote-build.nix;
+    user-alextserepov = import ./alextserepov.nix;
+    user-milval = import ./milval.nix;
+    user-vadikas = import ./vadikas.nix;
+    user-uae-remote-build = import ./uae-remote-build.nix;
+    user-ctsopokis = import ./ctsopokis.nix;
+    user-pavelf = import ./pavelf.nix;
+    user-xzr = import ./xzr.nix;
+
+    team-devenv = import ./teams/devenv.nix;
+    team-testers = import ./teams/testers.nix;
+  };
+}

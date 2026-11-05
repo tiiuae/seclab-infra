@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2022-2025 TII (SSRC) and the Ghaf contributors
+# SPDX-License-Identifier: Apache-2.0
+{ config, ... }:
+{
+  networking.firewall.allowedTCPPorts = [
+    443
+    80
+  ];
+
+  services.nginx = {
+    enable = true;
+
+    recommendedGzipSettings = true;
+    recommendedOptimisation = true;
+    recommendedProxySettings = true;
+    recommendedTlsSettings = true;
+
+    resolver.addresses =
+      if config.networking.nameservers == [ ] then [ "1.1.1.1" ] else config.networking.nameservers;
+  };
+
+  security.acme = {
+    acceptTerms = true;
+    defaults.email = "trash@unikie.com";
+  };
+}

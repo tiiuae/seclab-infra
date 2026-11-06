@@ -6,6 +6,7 @@
   modulesPath,
   lib,
   machines,
+  config,
   ...
 }:
 {
@@ -80,4 +81,14 @@
   # fail2ban only causes issues here
   services.fail2ban.enable = lib.mkForce false;
 
+  services.nebula.networks."seclab".firewall = {
+    inbound = [
+      # pkcs11-daemon
+      {
+        port = config.pkcs11.proxy.listenPort;
+        proto = "tcp";
+        host = "any";
+      }
+    ];
+  };
 }

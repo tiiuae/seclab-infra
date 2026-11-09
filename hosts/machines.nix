@@ -6,27 +6,38 @@
 # - machine: optional deploy/install metadata (ip, internal_ip, nebula_ip, publicKey).
 # - kind: optional; set to "vm" for outliers that should not be auto-generated via mkNixOS.
 {
-  uae-seclab-lighthouse = {
-    module = ./uae/seclab/lighthouse/configuration.nix;
+  seclab-lighthouse = {
+    module = ./lighthouse/configuration.nix;
     system = "x86_64-linux";
     machine = {
       ip = "172.164.242.94";
       internal_ip = "10.51.48.4";
       nebula_ip = "10.43.43.1";
       publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOYdOsd6swR+x0AHmcm4ixi+KP/jGax9h/v29C5X0h3b";
+      environment = "azure";
     };
   };
-  uae-seclab-nethsm-gateway = {
-    module = ./uae/seclab/nethsm-gateway/configuration.nix;
+  seclab-nethsm-gateway = {
+    module = ./nethsm-gateway/configuration.nix;
     system = "x86_64-linux";
     machine = {
       ip = "10.161.5.238";
       internal_ip = "10.161.5.238";
       nebula_ip = "10.43.43.16";
       publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILTaE7O/g8BQZjLYBXn1Jkxm4YtF8wpoX9dRAqsODzRM";
+      environment = "masdar";
     };
   };
-
+  seclab-builder1 = {
+    module = ./builder1/configuration.nix;
+    system = "x86_64-linux";
+    machine = {
+      ip = "172.20.16.36";
+      nebula_ip = "10.43.43.11";
+      publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEM7JQd03SZz7q27EsVt4oVIXfuu1d4LWuTjaA17yp3r";
+      environment = "masdar,lab";
+    };
+  };
 }
 
 # Reserved Nebula IPs for externally managed hosts:

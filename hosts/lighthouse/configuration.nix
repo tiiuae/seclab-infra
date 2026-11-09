@@ -10,7 +10,7 @@
 {
   imports = [
     ./disk-config.nix
-    ../../azureci/azure-common.nix
+    ../azure-common.nix
     (modulesPath + "/profiles/qemu-guest.nix")
     inputs.disko.nixosModules.disko
   ]

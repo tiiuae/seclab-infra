@@ -73,7 +73,7 @@ in
       listen.port = listenPort;
 
       staticHostMap = {
-        "${lighthouseAddress}" = [ "${machines.uae-seclab-lighthouse.ip}:${toString listenPort}" ];
+        "${lighthouseAddress}" = [ "${machines.seclab-lighthouse.ip}:${toString listenPort}" ];
       };
 
       settings = {

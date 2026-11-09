@@ -11,9 +11,9 @@ keys:
   - &pavelf age1ndka4hh9dadckkk7y35zz98p2e0ykxpaewaw5eukezxl8sus7dsqcu0ydk
 
   # hosts
-  - &uae-seclab-lighthouse age14vnkuc4zsc3vvye0rrld25a0h2edynwrl7zckr0tqptw6krkcsvsnu89f8
-  - &uae-lab-builder1 age14pjmdvz54aly32kmlgac9ngq2sdeaear0pqmg60wd8ad2cgdvpxq624mrd
-  - &uae-seclab-nethsm-gateway age1l3unkpynt2rz5fc52us5utxk7shm7g67suk4r8qt7wz2hegaa46q0ruqdz
+  - &seclab-lighthouse age14vnkuc4zsc3vvye0rrld25a0h2edynwrl7zckr0tqptw6krkcsvsnu89f8
+  - &builder1 age14pjmdvz54aly32kmlgac9ngq2sdeaear0pqmg60wd8ad2cgdvpxq624mrd
+  - &nethsm-gateway age1l3unkpynt2rz5fc52us5utxk7shm7g67suk4r8qt7wz2hegaa46q0ruqdz
 
 creation_rules:
   - path_regex: modules/nebula/ca\.key(\.crypt)?$
@@ -26,24 +26,24 @@ creation_rules:
     - age:
       - *fayad
       - *jrautiola
-      - *uae-seclab-lighthouse
-      - *uae-lab-builder1
-      - *uae-seclab-nethsm-gateway
-  - path_regex: hosts/uae/seclab/lighthouse/secrets.yaml$
+      - *seclab-lighthouse
+      - *builder1
+      - *nethsm-gateway
+  - path_regex: hosts/lighthouse/secrets.yaml$
     key_groups:
     - age:
-      - *uae-seclab-lighthouse
+      - *seclab-lighthouse
       - *fayad
       - *jrautiola
-  - path_regex: hosts/uae/lab/builder1/secrets.yaml$
+  - path_regex: hosts/builder1/secrets.yaml$
     key_groups:
     - age:
-      - *uae-lab-builder1
+      - *builder1
       - *fayad
       - *jrautiola
-  - path_regex: hosts/uae/seclab/nethsm-gateway/secrets.yaml$
+  - path_regex: hosts/nethsm-gateway/secrets.yaml$
     key_groups:
     - age:
-      - *uae-seclab-nethsm-gateway
+      - *nethsm-gateway
       - *fayad
       - *jrautiola

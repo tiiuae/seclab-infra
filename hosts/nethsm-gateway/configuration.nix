@@ -71,7 +71,7 @@
   nebula.enable = lib.mkDefault true;
 
   nethsm.host = lib.mkDefault "192.168.70.20";
-  pkcs11.proxy.listenAddr = machines.uae-seclab-nethsm-gateway.nebula_ip;
+  pkcs11.proxy.listenAddr = machines.seclab-nethsm-gateway.nebula_ip;
 
   # Fix nebula handshake issues in UAE
   services.nebula.networks.seclab.listen.port = lib.mkForce 0;

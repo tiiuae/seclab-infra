@@ -3,12 +3,11 @@
 
 keys:
   # users
-  - &hrosten age1hc6hszepd5xezxkgd3yx74pn3scxjm5w6px48m4rq9yj7w6rke7q72zhgn
   - &jrautiola age1hszrldafdz09hzze4lgq58r0r66p4sjftn6q8z6h0leer77jhf4qd9vu9v
-  - &cazfi age10a2kt6f07urjv6ahutda3jgr73wferkcqjhkvukwm07eaaqyrqtsh08syf
   - &fayad age18t3gss4l6l629rd8s93eh3ctycu9vjnsftehy38c8tstu2gqycxs64t4sw
   - &ktu age1w0ymdztkr043a9gnxrx95k77ek5h58zza5q7jz9gqm63gz2chgcskkfwzt
-  - &pavelf age1ndka4hh9dadckkk7y35zz98p2e0ykxpaewaw5eukezxl8sus7dsqcu0ydk
+  - &lasse age1uyx0n8e84987arvsrm9c2r02k64slstnv32y2j0duuj47elh3v7qnhweh4
+  - &kiran age1q5z5ng8qe4ya7c5mc8gqrj2w6k5frk7ad04pjx9csaeya7r6cdls3s47h3
 
   # hosts
   - &uae-seclab-lighthouse age14vnkuc4zsc3vvye0rrld25a0h2edynwrl7zckr0tqptw6krkcsvsnu89f8
@@ -26,6 +25,8 @@ creation_rules:
     - age:
       - *fayad
       - *jrautiola
+      - *lasse
+      - *kiran
       - *uae-seclab-lighthouse
       - *uae-lab-builder1
       - *uae-seclab-nethsm-gateway

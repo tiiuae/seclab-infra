@@ -20,6 +20,9 @@ creation_rules:
     - age:
       - *fayad
       - *jrautiola
+      - *kiran
+      - *lasse
+      - *eyad
   - path_regex: modules/nebula/ca\.crt(\.crypt)?$
     key_groups:
     - age:

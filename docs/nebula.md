@@ -5,8 +5,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 # Nebula overlay network
 
-[Nebula](https://github.com/slackhq/nebula) connects the servers in Hetzner,
-the Tampere office, and the UAE over an encrypted overlay network.
+[Nebula](https://github.com/slackhq/nebula) connects the servers in Seclab Infra,
+and the servers in Azure, masdar and yas in the UAE over an encrypted overlay network.
 
 ![diagram](./nebula-monitoring.png)
 
@@ -137,8 +137,10 @@ shared firewall rules in `modules/nebula/default.nix` and host-specific rules.
 
 | Group | Purpose |
 |---|---|
-| `sfo` | UAE sfo nodes |
-| `robots` | UAE robots nodes |
+| `sfoci` | UAE sfo nodes |
+| `robotci` | UAE robots nodes |
+| `robotlab` | UAE robot lab nodes |
 | `azure` | UAE azure machines |
 | `uae-lab` | UAE lab nodes |
 | `masdar` | UAE masdar nodes |
+| `carbon` | Joonas work machine from nix-infra |

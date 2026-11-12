@@ -46,3 +46,4 @@
 # nebula_ip = 10.43.43.15 | carbon (managed in jrautiola's nix-infra)
 # nebula_ip = 10.43.43.17 | robotlab (managed in ghaf-robots-infra)
 # nebula_ip = 10.43.43.18 | kiran
+# nebula_ip = 10.43.43.19 | sfoci (managed in ghaf-sfo-infra)

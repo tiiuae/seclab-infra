@@ -13,6 +13,7 @@ keys:
   - &seclab-lighthouse age14vnkuc4zsc3vvye0rrld25a0h2edynwrl7zckr0tqptw6krkcsvsnu89f8
   - &builder1 age14pjmdvz54aly32kmlgac9ngq2sdeaear0pqmg60wd8ad2cgdvpxq624mrd
   - &seclab-nethsm-gateway age1l3unkpynt2rz5fc52us5utxk7shm7g67suk4r8qt7wz2hegaa46q0ruqdz
+  - &seclab-nethsm-gateway-dev1 age1yfstvnpvgycaw8fh58k0g4yrrv0845z972m7m555j8duvnwjeu3qyrqvhm
 
 creation_rules:
   - path_regex: modules/nebula/ca\.key(\.crypt)?$
@@ -52,3 +53,8 @@ creation_rules:
       - *seclab-nethsm-gateway
       - *fayad
       - *jrautiola
+  - path_regex: hosts/nethsm-gateway-dev1/secrets.yaml$
+    key_groups:
+    - age:
+      - *seclab-nethsm-gateway-dev1
+      - *fayad

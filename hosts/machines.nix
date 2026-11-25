@@ -17,6 +17,7 @@
       environment = "azure";
     };
   };
+
   seclab-nethsm-gateway = {
     module = ./nethsm-gateway/configuration.nix;
     system = "x86_64-linux";
@@ -28,6 +29,7 @@
       environment = "masdar";
     };
   };
+
   seclab-builder1 = {
     module = ./builder1/configuration.nix;
     system = "x86_64-linux";
@@ -38,6 +40,17 @@
       environment = "masdar,lab";
     };
   };
+
+  seclab-nethsm-gateway-dev1 = {
+    module = ./nethsm-gateway-dev1/configuration.nix;
+    system = "x86_64-linux";
+    machine = {
+      ip = "172.20.16.39";
+      publicKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBm2tqPYWbae6KatfvlvEwrhdZBTfwOT6bfxdLTSqZvU";
+      environment = "masdar";
+    };
+  };
+
 }
 
 # Reserved Nebula IPs for externally managed hosts:
